@@ -1,0 +1,960 @@
+/* RESET DE MARGEN */
+* { 
+     margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+ /* FUENTES */
+@font-face {
+    font-family: RubikDirt-Regular;
+    src: url(../media/fonts/RubikDirt-Regular.ttf);
+}
+ @font-face {
+    font-family: Caveat;
+    src: url(../media/fonts/Caveat-VariableFont_wght.ttf)}
+
+ a{ text-decoration: none;}                      
+
+    body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px,800px, 400px;
+    grid-template-areas: 
+                        "header header header"
+                        "main main main"                
+                        "footer footer footer";
+}
+header{
+    grid-area: header;
+    /* /* width: 100vw; */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50%, 50%;
+    grid-template-areas:
+                         "titulo titulo titulo logo"
+                         "barra barra barra logo";
+    height: 200px; 
+    font-family: RubikDirt-Regular;
+    color: rgb(219, 202, 105);
+    background-color: rgb(95, 4, 4);
+    background-image: url(../media/images/fondomadera.png); 
+    background-size: cover;
+    position: relative; 
+
+}
+.logoJuanis{
+    grid-area: logo;
+    width: 300px;
+    height: 170px;
+    background-image: url(../media/images/logojuanistoro-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    right: 10%;
+    top: 10%;
+    
+}
+a{
+    color: rgb(219, 202, 105);}
+.tituloJuanis{
+    grid-area: titulo;
+    width: 534px;
+    height: 20px; 
+    position: absolute; 
+    left: 45%;
+    top: 40%;
+    
+}
+
+.barraNavegacion{
+    grid-area: barra;
+    width: 550px;
+    height: 20px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+   
+}
+.flexNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+ul li{
+    list-style: none;
+    border-style:outset;
+    background-color: rgb(95, 4, 4);
+    color:  rgb(219, 202, 105);
+    }
+
+
+main{
+    grid-area: main;
+    /* width: 100vw; */
+    height: 800px;
+    background-color: black;
+    background-image: url(../media/images/bonfire-fire-embers-sparks.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* PÁGINA NOSOTROS */
+.restoSalon1{
+        width: 900px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../media/images/resto/juanisnosotros2.jpg);
+        position: absolute;
+        
+    
+}
+
+.restoParrilla{
+        width: 700px;
+        height: 700px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../media/images/resto/juanisnosotros1.jpg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+/* PÁGINA GALERÍA */
+#mainGaleria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+                        "ref ref ref ref"
+                        "gal gal gal gal"
+                        "gal gal gal gal"
+                        "gal gal gal gal";
+}
+.referenciaGaleria{
+    grid-area: ref;
+    width: 700px;
+    color: rgb(219, 202, 105);
+    font-family: RubikDirt-Regular;
+    font-size: x-large;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+.galeria{
+    grid-area: gal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.galeria1{       
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        left: 81%;
+    }
+    .galeria2{       
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        left: 60%;
+    }
+    .galeria3{    
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+    .galeria4{  
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    .galeria5{     
+         width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 30%;
+    }
+/* PÁGINA CATERING*/
+.catering1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 81%;
+}
+
+.catering3{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 40%;
+}
+.catering4{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+     top: 60%;
+}
+
+
+.catering6{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 60%;
+    left: 81%;
+}
+.catering7{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+
+}
+.presentacionCatering{
+    width: 500px;
+    height: 350px;
+
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: rgb(219, 202, 105);
+    font-family: RubikDirt-Regular;
+    font-size: xx-large;
+    
+
+}
+
+/* FORMULARIO DE CONTACTO + BOX MODEL */
+fieldset{
+    width: 400px;
+    height: 700px;
+    background-color: rgb(94,4,4);
+    background-image: url(../media/images/aplausoasador.jpg);
+    background-size:cover;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    color: rgb(219, 202, 105);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: outset;
+    border-color: rgb(219,202,105);
+}
+.bgFormulario{
+    width: 80px;
+    margin: 5px;
+    border: outset;
+    background-color: rgb(94,4,4);
+    position: relative;
+    }
+
+.poemaAsado{
+    width: 200px;
+    height: 500px;
+    font-family: RubikDirt-Regular;
+    color: rgb(219, 202, 105);
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+footer{ 
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: 
+                        "ubi copyr redes"
+                        "ubi copyr redes";
+    /* width: 100vw; */
+    height: 200px;
+    background-color: rgb(95, 4, 4);
+    background-image: url(../media/images/fondomadera.png);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(219, 202, 105);
+    position: relative
+    ;
+}
+.copyJuana{
+    grid-area: copyr;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+} 
+.ubicacion{
+    grid-area: ubi;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+}
+.botonesRedes{
+    grid-area: redes;
+}
+
+/* QUERIES */
+
+@media screen and (min-width: 320px ) and (max-width:479px){
+    body{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 150px,200px,200px,150px;
+        grid-template-areas: 
+                            "header header"
+                            "main main"
+                            "main main"
+                            "footer footer";
+    }
+    header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px,75px;
+        grid-template-areas: 
+                            "titulo"
+                            "barra";
+                            
+        height:150px ;
+                            
+    }
+    
+        .tituloJuanis{
+        grid-area: titulo;
+        width: 320px;
+        height: 75px; 
+        font-size:x-small;
+        position: unset;
+        text-align: center;
+        
+       
+        
+    }
+    .barraNavegacion{
+        grid-area: barra;
+        width: 320px;
+        height: 75px;
+        font-size:smaller;
+        position: unset;
+            }
+     .flexNav{
+            width: 320px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        
+    
+           }
+    .logoJuanis{
+       display: none;
+        width: 0px;
+       height: 0px;
+        background-image: none;
+    }
+    main{
+        grid-area: main;
+        width: 100vw;
+        height: 400px;
+        background-color: black;
+        background-image: url(../media/images/bonfire-fire-embers-sparks.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;    
+    } 
+       /*NOSOTROS  */
+       #mainNosotros{
+        display: flex;
+        flex-direction: column;
+       }
+       .restoSalon1{
+        width: 320px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../media/images/resto/juanisnosotros2.jpg);
+        position: unset;
+        }
+      .restoParrilla{      
+            width: 320px;
+            height: 400px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../media/images/resto/juanisnosotros1.jpg);
+            position: unset;
+            
+    }
+    /* GALERIA */
+    #mainGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "ref"
+                            "gal";
+    }
+    .referenciaGaleria{        
+        margin-top: 10px;
+        width: 320px;
+        font-size:smaller;
+        position: unset;
+        text-align: center;
+    }
+    .galeria{
+        background-image: url(/media/images/carta/otro-reconocimiento-para-la-prestigiosa___wudUTgHHZ_640x361__1.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .galeria1{       
+        display: none;       
+    }
+    .galeria2{       
+        display: none;
+    }
+    .galeria3{    
+        display: none;
+    }
+    .galeria4{  
+        display: none;
+    }
+    .galeria5{     
+         display: none;
+    }
+    /* CATERING */
+    .catering1{
+        display: none;
+    }   
+    .catering3{
+        display: none;
+    }
+    .catering4{
+       display: none;
+    }   
+    .catering6{
+       display: none;}
+    .catering7{
+        width: 320px;
+        height: 320px;
+        position: unset;
+    
+    }
+    .presentacionCatering{
+        width: 320px;
+        height: 80px;
+    
+        position:unset;
+        top: 50%;
+        left: 35%;
+        color: rgb(219, 202, 105);
+        font-family: RubikDirt-Regular;
+        font-size: smaller;
+    }
+    /* CONTACTO */
+    fieldset{
+        width: 320px;
+        height: 400px;       
+        position: unset;
+    }
+    .bgFormulario{
+        margin: 0px;        
+        }
+        footer{ 
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50%, 50%;
+        grid-template-areas: 
+                            "redes"
+                            "copyr";
+        width: 100vw;
+        height: 150px;
+        justify-items: center;
+              } 
+    .ubicacion{
+        display: none;  }      
+    .copyJuana{
+            grid-area: copyr;
+            width: 250px;
+            height: 75px;
+            position:unset;
+               } 
+     .botonesRedes{
+                grid-area: redes;
+                height: 75px;
+            }}
+
+@media screen and (min-width: 480px ) and (max-width:599px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px,300px,200px;
+        grid-template-areas: 
+                            "header"
+                            "main"
+                            "footer";
+    }
+   header{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px,75px;
+        grid-template-areas: 
+                            "titulo"
+                            "barra";                          
+        height:150px ;
+        max-width: 600px;
+        justify-content: center;
+   }
+    main{
+        height: 350px; 
+        max-width: 600px;       
+    }
+    /* NOSOTROS */
+    #mainNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .restoSalon1{
+        width: 480px;
+        height: 400px;
+        position: unset;
+        }
+    .restoParrilla{
+        width: 480px;
+        height: 400px;
+        position: unset;
+         }
+    /* GALERÍA */
+    #mainGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "ref"
+                            "gal";
+    }
+    .referenciaGaleria{        
+        margin-top: 10px;
+        width: 320px;
+        font-size:smaller;
+        position: unset;
+        text-align: center;
+    }
+
+    .galeria{
+        background-image: url(/media/images/carta/otro-reconocimiento-para-la-prestigiosa___wudUTgHHZ_640x361__1.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .galeria1{       
+        display: none;       
+    }
+    .galeria2{       
+        display: none;
+    }
+    .galeria3{    
+        display: none;
+    }
+    .galeria4{  
+        display: none;
+    }
+    .galeria5{     
+         display: none;}
+    .logoJuanis{
+    display: none;
+    }
+    .tituloJuanis{   
+        grid-area: titulo;
+        width: 599px;
+        height: 20px;       
+        font-size: smaller;
+        left: 5%;
+       
+    }
+    .barraNavegacion{
+    grid-area: barra;
+    width: 400px;
+    height: 20px; 
+    padding-inline: 15px;
+    left: 0%;
+   top: 60%;
+    }
+    /* CATERING */
+    #mainCatering{
+        display: flex;
+        flex-direction: row;
+    }
+    .catering1{
+        display: none;
+    }   
+    .catering3{
+       display: none;
+    }
+    .catering4{
+       display: none;
+    }   
+       .catering6{
+        display: none;
+    }
+    .catering7{
+        width: 320px;
+        height: 320px;
+        position: unset;
+        }
+    .presentacionCatering{
+        width: 80px;
+        height: 20px;
+        position: unset;
+        font-size: smaller;
+        padding:10% ; 
+              }
+
+   /*CONTACTO */
+   fieldset{
+    width: 480px;
+    height: 400px;    
+    position: unset;    
+}
+
+    footer{ 
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px, 100px;
+    grid-template-areas: 
+                        "redes"
+                        "copyr";
+    max-width: 600px;
+    height: 200px;
+    justify-items: center;
+    align-items: end;
+          } 
+    .ubicacion{
+    display: none;  }      
+    .copyJuana{
+        grid-area: copyr;
+        width: 250px;
+        height: 20px;
+        position:unset;
+           } 
+    .botonesRedes{
+            grid-area: redes;
+            height: 75px;
+        }
+        }
+@media screen and (min-width:600px) and (max-width:930px){
+    
+       .tituloJuanis{                   
+            height: 20px;             
+            left: 0%;
+            top: 40%;
+            font-size: smaller;
+    }
+/* NOSOTROS */
+#mainNosotros{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.restoSalon1{
+    width: 600px;
+    position: unset;
+}
+.restoParrilla{
+    width: 600px;
+    position: unset;
+}
+/* GALERÍA */
+    #mainGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "ref"
+                            "gal";
+    }
+    .referenciaGaleria{        
+        margin-top: 30px;
+        width: 600px;
+        font-size:large;
+        position: unset;
+        text-align: center;
+    }
+
+    .galeria{
+    justify-content: space-around;    
+    }
+    .galeria1{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria2{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria3{    
+        display: none;
+    }
+    .galeria4{  
+        display: none;
+    }
+    .galeria5{     
+         display: none;}
+    .logoJuanis{
+        width: 150px;
+        height: 150px;
+    }
+    .barraNavegacion{
+        left: 5%;
+    }
+    /* CATERING */
+    #mainCatering{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: unset;
+    }
+    .catering1{
+        display: none;
+    }    
+    .catering3{
+        display: none;
+    }
+    .catering4{
+        display: none;
+    } 
+    .catering6{
+        width: 320px;
+        height: 320px;
+        position: unset;  
+    }
+    .catering7{
+        width: 320px;
+        height: 320px;
+        position: unset; 
+    }
+    .presentacionCatering{
+        width: 500px;
+        height: 80px;
+        position: unset;
+        font-size: medium;
+    }
+    
+    footer{ 
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,100px);
+        grid-template-areas: 
+                            "ubi ubi redes"
+                            "ubi ubi redes"                           
+                            "copyr copyr copyr";
+        height: 300px;
+    }
+    .copyJuana{
+           left: 30%;
+           top: 40%;
+            }        
+    }
+@media screen and (min-width:931px) and (max-width:1200px){
+    .tituloJuanis{                   
+        height: 20px;             
+        left: 0%;
+        top: 40%;
+        font-size: smaller;
+}
+/* NOSOTROS */
+.restoSalon1{
+    width: 900px;
+    height: 400px;
+    position: unset;
+}
+
+.restoParrilla{
+    width: 700px;
+    height: 400px;
+    position: unset;
+    margin-left: 24%; 
+
+}
+/* GALERÍA */
+    #mainGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "ref"
+                            "gal";
+    }
+    .referenciaGaleria{        
+        margin-top: 10px;
+        width: 600px;
+        font-size: xx-large;
+        position: unset;
+        
+    }
+
+    .galeria{
+    justify-content: space-around;    
+    }
+    .galeria1{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria2{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria3{    
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria4{  
+        display: none;
+    }
+    .galeria5{     
+         display: none;
+        }
+        /* CATERING */
+        .catering1{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            left: 65%;
+        }
+        
+        .catering3{
+        display: none;    
+        }
+        .catering4{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+             top: 60%;
+        }
+        
+        
+        .catering6{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            top: 60%;
+            left: 65%;
+        }
+        .catering7{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+        
+        }
+        .presentacionCatering{
+            width: 300px;
+            height: 80px;
+        
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            color: rgb(219, 202, 105);
+            font-family: RubikDirt-Regular;
+            font-size:large;
+            
+        
+        }
+}
+@media screen and (min-width:1200px) and (max-width:1500px){
+    /* NOSOTROS */
+.restoParrilla{      
+        height: 400px;     
+        left: 40%;    
+    }
+    /* GALERÍA */
+    #mainGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "ref"
+                            "gal";
+    }
+    .referenciaGaleria{        
+        margin-top: 10px;
+        width: 600px;
+        font-size:xx-large;
+        position: unset;
+        
+    }
+
+    .galeria{
+    justify-content: space-around;    
+    }
+    .galeria1{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria2{       
+        
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria3{    
+        width: 300px;
+        height: 300px;
+        position: unset;
+    }
+    .galeria4{  
+        width: 300px;
+        height: 300px;
+        position: unset;}
+    .galeria5{     
+         display: none;}  
+    /*CATERING */
+    .catering1{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        left: 73%;
+    }
+    
+    .catering3{
+        width: 320px;
+        height: 350px;
+        position: absolute;
+        left: 37%;
+    }
+    .catering4{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+         top: 60%;
+    }
+    
+    
+    .catering6{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        top: 60%;
+        left: 73%;
+    }
+    .catering7{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+    
+    }
+        }
