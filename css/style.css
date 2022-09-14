@@ -874,6 +874,35 @@ footer{
         }
 }
 @media screen and (min-width:1200px) and (max-width:1500px){
+   
+    /* Animación BODY */
+    body{
+        background-color: black;
+        animation-name: opacidad;
+        animation-duration: 2s;
+    }
+    @keyframes opacidad {
+         0% { opacity:0 ;}
+         100%{opacity: 1;}
+    }
+   /* Animación HEADER */
+    header{      
+        animation-name: maderaH;       
+        animation-duration: 2s;
+    }
+    @keyframes maderaH {
+          0%{transform: translateY(-200px);}
+          100%{transform: translateY(0px);}  
+    }
+   /* Animación FOOTER */
+   footer{
+    animation-name: maderaF;       
+    animation-duration: 2s;
+   }
+   @keyframes maderaF {
+    0%{transform: translateY(200px);}
+    100%{transform: translateY(0px);}  
+}
     /* NOSOTROS */
 .restoParrilla{      
         height: 400px;     
@@ -957,4 +986,20 @@ footer{
         position: absolute;
     
     }
+    /* CONTACTO */
+     /* Animaciones */
+     fieldset{
+        transition: 3s;
+        animation-name: formulario;
+        animation-duration: 2s;
+     }
+     fieldset:hover{
+        width: 420px;
+        height: 720px;
+        transition: 2s;
+     }
+     @keyframes formulario {
+            0%{transform:translateX(-710px);}
+            100%{transform: translateX(0px);}
+     }
         }
