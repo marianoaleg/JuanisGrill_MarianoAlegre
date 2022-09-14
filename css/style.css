@@ -82,8 +82,8 @@ a{
 } 
 ul li{
     list-style: none;
-    border-style:outset;
-    background-color: rgb(95, 4, 4);
+    border-style:outset; 
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,9,9,1) 35%, rgba(121,9,9,1) 54%, rgba(0,0,0,1) 100%);
     color:  rgb(219, 202, 105);
     }
 
@@ -250,7 +250,7 @@ fieldset{
     width: 80px;
     margin: 5px;
     border: outset;
-    background-color: rgb(94,4,4);
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,9,9,1) 35%, rgba(121,9,9,1) 54%, rgba(0,0,0,1) 100%);
     position: relative;
     }
 
